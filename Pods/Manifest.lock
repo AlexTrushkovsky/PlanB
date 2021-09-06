@@ -1,0 +1,16 @@
+PODS:
+  - StepSlider (1.8.0)
+
+DEPENDENCIES:
+  - StepSlider
+
+SPEC REPOS:
+  trunk:
+    - StepSlider
+
+SPEC CHECKSUMS:
+  StepSlider: 890db727e779fa99cb32afffc5887c1109e151f4
+
+PODFILE CHECKSUM: 0cc8eb6aa16a6c566adcea7e8e2b962ebf35a1b6
+
+COCOAPODS: 1.10.2

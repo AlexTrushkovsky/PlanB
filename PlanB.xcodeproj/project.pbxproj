@@ -3,27 +3,99 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6E7FA1C226DD550300FC9046 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7FA1C126DD550300FC9046 /* AppDelegate.swift */; };
-		6E7FA1C426DD550300FC9046 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7FA1C326DD550300FC9046 /* SceneDelegate.swift */; };
-		6E7FA1C626DD550300FC9046 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7FA1C526DD550300FC9046 /* ViewController.swift */; };
+		6E7FA1C626DD550300FC9046 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7FA1C526DD550300FC9046 /* MainViewController.swift */; };
 		6E7FA1C926DD550300FC9046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E7FA1C726DD550300FC9046 /* Main.storyboard */; };
 		6E7FA1CB26DD550500FC9046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E7FA1CA26DD550500FC9046 /* Assets.xcassets */; };
 		6E7FA1CE26DD550500FC9046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E7FA1CC26DD550500FC9046 /* LaunchScreen.storyboard */; };
+		6ECF29C526E12D41005C79EC /* textAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECF29C426E12D41005C79EC /* textAnimation.swift */; };
+		6EEB5A1526DF6271000112D1 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A0C26DF6271000112D1 /* UIView+Extensions.swift */; };
+		6EEB5A1626DF6271000112D1 /* CardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A0E26DF6271000112D1 /* CardContentView.swift */; };
+		6EEB5A1726DF6271000112D1 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A0F26DF6271000112D1 /* CardModel.swift */; };
+		6EEB5A1826DF6271000112D1 /* CardFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A1026DF6271000112D1 /* CardFooterView.swift */; };
+		6EEB5A1A26DF6271000112D1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A1226DF6271000112D1 /* GameViewController.swift */; };
+		6EEB5A2626E00263000112D1 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A2526E00263000112D1 /* Gradient.swift */; };
+		6EEB5A2926E00317000112D1 /* ModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A2826E00317000112D1 /* ModeViewController.swift */; };
+		6EEB5A2C26E004E3000112D1 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A2B26E004E3000112D1 /* CornerRadius.swift */; };
+		6EEB5A3326E00A30000112D1 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A3026E00A2F000112D1 /* TagView.swift */; };
+		6EEB5A3426E00A30000112D1 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A3126E00A30000112D1 /* CloseButton.swift */; };
+		6EEB5A3526E00A30000112D1 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A3226E00A30000112D1 /* TagListView.swift */; };
+		6EEB5A5326E029E2000112D1 /* CardAnimationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A3D26E029E2000112D1 /* CardAnimationOptions.swift */; };
+		6EEB5A5426E029E2000112D1 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A3E26E029E2000112D1 /* SwipeView.swift */; };
+		6EEB5A5526E029E2000112D1 /* CardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A3F26E029E2000112D1 /* CardAnimator.swift */; };
+		6EEB5A5626E029E2000112D1 /* SwipeCardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A4026E029E2000112D1 /* SwipeCardDelegate.swift */; };
+		6EEB5A5726E029E2000112D1 /* SwipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A4126E029E2000112D1 /* SwipeCard.swift */; };
+		6EEB5A5826E029E2000112D1 /* SwipeCardStackDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A4326E029E2000112D1 /* SwipeCardStackDataSource.swift */; };
+		6EEB5A5926E029E2000112D1 /* CardStackAnimationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A4426E029E2000112D1 /* CardStackAnimationOptions.swift */; };
+		6EEB5A5A26E029E2000112D1 /* CardStackAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A4526E029E2000112D1 /* CardStackAnimator.swift */; };
+		6EEB5A5B26E029E2000112D1 /* SwipeCardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A4626E029E2000112D1 /* SwipeCardStack.swift */; };
+		6EEB5A5C26E029E2000112D1 /* SwipeCardStackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A4726E029E2000112D1 /* SwipeCardStackDelegate.swift */; };
+		6EEB5A5D26E029E2000112D1 /* CardStackStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A4826E029E2000112D1 /* CardStackStateManager.swift */; };
+		6EEB5A5E26E029E2000112D1 /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A4926E029E2000112D1 /* SwipeDirection.swift */; };
+		6EEB5A5F26E029E2000112D1 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A4B26E029E2000112D1 /* Array+Extensions.swift */; };
+		6EEB5A6026E029E2000112D1 /* CGVector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A4C26E029E2000112D1 /* CGVector+Extensions.swift */; };
+		6EEB5A6126E029E2000112D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A4D26E029E2000112D1 /* Extensions.swift */; };
+		6EEB5A6226E029E2000112D1 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A4E26E029E2000112D1 /* StringUtils.swift */; };
+		6EEB5A6326E029E2000112D1 /* PanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A4F26E029E2000112D1 /* PanGestureRecognizer.swift */; };
+		6EEB5A6426E029E2000112D1 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A5026E029E2000112D1 /* Animator.swift */; };
+		6EEB5A6526E029E2000112D1 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A5126E029E2000112D1 /* CGPoint+Extensions.swift */; };
+		6EEB5A6626E029E2000112D1 /* TapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A5226E029E2000112D1 /* TapGestureRecognizer.swift */; };
+		6EEB5A6A26E029F9000112D1 /* KeyboardDismissingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A6826E029F9000112D1 /* KeyboardDismissingView.swift */; };
+		6EEB5A6B26E029F9000112D1 /* KeyboardAvoiding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A6926E029F9000112D1 /* KeyboardAvoiding.swift */; };
+		6EEB5A6D26E0CCA8000112D1 /* TextfieldPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB5A6C26E0CCA8000112D1 /* TextfieldPadding.swift */; };
+		BAF68DF32F4647275E839D02 /* Pods_PlanB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DCBA9ED4288E52F1B0EB190 /* Pods_PlanB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3274B44EBA6AC6EE65EF13E8 /* Pods-PlanB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanB.release.xcconfig"; path = "Target Support Files/Pods-PlanB/Pods-PlanB.release.xcconfig"; sourceTree = "<group>"; };
 		6E7FA1BE26DD550300FC9046 /* PlanB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E7FA1C126DD550300FC9046 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6E7FA1C326DD550300FC9046 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6E7FA1C526DD550300FC9046 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6E7FA1C526DD550300FC9046 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6E7FA1C826DD550300FC9046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E7FA1CA26DD550500FC9046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E7FA1CD26DD550500FC9046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E7FA1CF26DD550500FC9046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ECF29C426E12D41005C79EC /* textAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textAnimation.swift; sourceTree = "<group>"; };
+		6EEB5A0C26DF6271000112D1 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		6EEB5A0E26DF6271000112D1 /* CardContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardContentView.swift; sourceTree = "<group>"; };
+		6EEB5A0F26DF6271000112D1 /* CardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		6EEB5A1026DF6271000112D1 /* CardFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardFooterView.swift; sourceTree = "<group>"; };
+		6EEB5A1226DF6271000112D1 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		6EEB5A2526E00263000112D1 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		6EEB5A2826E00317000112D1 /* ModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeViewController.swift; sourceTree = "<group>"; };
+		6EEB5A2B26E004E3000112D1 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
+		6EEB5A3026E00A2F000112D1 /* TagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		6EEB5A3126E00A30000112D1 /* CloseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
+		6EEB5A3226E00A30000112D1 /* TagListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
+		6EEB5A3D26E029E2000112D1 /* CardAnimationOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardAnimationOptions.swift; sourceTree = "<group>"; };
+		6EEB5A3E26E029E2000112D1 /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		6EEB5A3F26E029E2000112D1 /* CardAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardAnimator.swift; sourceTree = "<group>"; };
+		6EEB5A4026E029E2000112D1 /* SwipeCardDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCardDelegate.swift; sourceTree = "<group>"; };
+		6EEB5A4126E029E2000112D1 /* SwipeCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCard.swift; sourceTree = "<group>"; };
+		6EEB5A4326E029E2000112D1 /* SwipeCardStackDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCardStackDataSource.swift; sourceTree = "<group>"; };
+		6EEB5A4426E029E2000112D1 /* CardStackAnimationOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStackAnimationOptions.swift; sourceTree = "<group>"; };
+		6EEB5A4526E029E2000112D1 /* CardStackAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStackAnimator.swift; sourceTree = "<group>"; };
+		6EEB5A4626E029E2000112D1 /* SwipeCardStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCardStack.swift; sourceTree = "<group>"; };
+		6EEB5A4726E029E2000112D1 /* SwipeCardStackDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCardStackDelegate.swift; sourceTree = "<group>"; };
+		6EEB5A4826E029E2000112D1 /* CardStackStateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStackStateManager.swift; sourceTree = "<group>"; };
+		6EEB5A4926E029E2000112D1 /* SwipeDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeDirection.swift; sourceTree = "<group>"; };
+		6EEB5A4B26E029E2000112D1 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		6EEB5A4C26E029E2000112D1 /* CGVector+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Extensions.swift"; sourceTree = "<group>"; };
+		6EEB5A4D26E029E2000112D1 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6EEB5A4E26E029E2000112D1 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		6EEB5A4F26E029E2000112D1 /* PanGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanGestureRecognizer.swift; sourceTree = "<group>"; };
+		6EEB5A5026E029E2000112D1 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		6EEB5A5126E029E2000112D1 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		6EEB5A5226E029E2000112D1 /* TapGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapGestureRecognizer.swift; sourceTree = "<group>"; };
+		6EEB5A6826E029F9000112D1 /* KeyboardDismissingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardDismissingView.swift; sourceTree = "<group>"; };
+		6EEB5A6926E029F9000112D1 /* KeyboardAvoiding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAvoiding.swift; sourceTree = "<group>"; };
+		6EEB5A6C26E0CCA8000112D1 /* TextfieldPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldPadding.swift; sourceTree = "<group>"; };
+		7DCBA9ED4288E52F1B0EB190 /* Pods_PlanB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlanB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A45E1B80574B8076AD30D389 /* Pods-PlanB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanB.debug.xcconfig"; path = "Target Support Files/Pods-PlanB/Pods-PlanB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +103,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF68DF32F4647275E839D02 /* Pods_PlanB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11397EDEB3893A1D57E6C415 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DCBA9ED4288E52F1B0EB190 /* Pods_PlanB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6E7FA1B526DD550300FC9046 = {
 			isa = PBXGroup;
 			children = (
 				6E7FA1C026DD550300FC9046 /* PlanB */,
 				6E7FA1BF26DD550300FC9046 /* Products */,
+				D3B188F0C7E290FB6112681F /* Pods */,
+				11397EDEB3893A1D57E6C415 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +139,186 @@
 		6E7FA1C026DD550300FC9046 /* PlanB */ = {
 			isa = PBXGroup;
 			children = (
-				6E7FA1C126DD550300FC9046 /* AppDelegate.swift */,
-				6E7FA1C326DD550300FC9046 /* SceneDelegate.swift */,
-				6E7FA1C526DD550300FC9046 /* ViewController.swift */,
+				6EEB5A2426E0024C000112D1 /* Helpers */,
+				6E9E734426DEA670002943E1 /* App */,
+				6E9E734326DEA661002943E1 /* Game */,
+				6E9E734226DEA65D002943E1 /* Mode */,
+				6E9E734126DEA639002943E1 /* Main */,
+				6E9E733E26DEA23E002943E1 /* Assets */,
 				6E7FA1C726DD550300FC9046 /* Main.storyboard */,
-				6E7FA1CA26DD550500FC9046 /* Assets.xcassets */,
-				6E7FA1CC26DD550500FC9046 /* LaunchScreen.storyboard */,
-				6E7FA1CF26DD550500FC9046 /* Info.plist */,
 			);
 			path = PlanB;
+			sourceTree = "<group>";
+		};
+		6E9E733E26DEA23E002943E1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6E7FA1CA26DD550500FC9046 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		6E9E734126DEA639002943E1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6E7FA1C526DD550300FC9046 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6E9E734226DEA65D002943E1 /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+				6EEB5A2826E00317000112D1 /* ModeViewController.swift */,
+			);
+			path = Mode;
+			sourceTree = "<group>";
+		};
+		6E9E734326DEA661002943E1 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				6EEB5A0826DF624A000112D1 /* CardView */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		6E9E734426DEA670002943E1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6E7FA1CF26DD550500FC9046 /* Info.plist */,
+				6E7FA1CC26DD550500FC9046 /* LaunchScreen.storyboard */,
+				6E7FA1C126DD550300FC9046 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6EEB5A0826DF624A000112D1 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				6EEB5A0B26DF6271000112D1 /* Extensions */,
+				6EEB5A0D26DF6271000112D1 /* SwipeCard */,
+				6EEB5A1226DF6271000112D1 /* GameViewController.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		6EEB5A0B26DF6271000112D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6EEB5A0C26DF6271000112D1 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6EEB5A0D26DF6271000112D1 /* SwipeCard */ = {
+			isa = PBXGroup;
+			children = (
+				6EEB5A0E26DF6271000112D1 /* CardContentView.swift */,
+				6EEB5A0F26DF6271000112D1 /* CardModel.swift */,
+				6EEB5A1026DF6271000112D1 /* CardFooterView.swift */,
+			);
+			path = SwipeCard;
+			sourceTree = "<group>";
+		};
+		6EEB5A2426E0024C000112D1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6EEB5A6726E029EE000112D1 /* Keyboard */,
+				6EEB5A3A26E029E1000112D1 /* Shuffle */,
+				6EEB5A2F26E00A20000112D1 /* TagListView */,
+				6EEB5A2526E00263000112D1 /* Gradient.swift */,
+				6EEB5A2B26E004E3000112D1 /* CornerRadius.swift */,
+				6EEB5A6C26E0CCA8000112D1 /* TextfieldPadding.swift */,
+				6ECF29C426E12D41005C79EC /* textAnimation.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6EEB5A2F26E00A20000112D1 /* TagListView */ = {
+			isa = PBXGroup;
+			children = (
+				6EEB5A3126E00A30000112D1 /* CloseButton.swift */,
+				6EEB5A3226E00A30000112D1 /* TagListView.swift */,
+				6EEB5A3026E00A2F000112D1 /* TagView.swift */,
+			);
+			path = TagListView;
+			sourceTree = "<group>";
+		};
+		6EEB5A3A26E029E1000112D1 /* Shuffle */ = {
+			isa = PBXGroup;
+			children = (
+				6EEB5A3B26E029E1000112D1 /* Classes */,
+			);
+			path = Shuffle;
+			sourceTree = "<group>";
+		};
+		6EEB5A3B26E029E1000112D1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6EEB5A3C26E029E1000112D1 /* SwipeCard */,
+				6EEB5A4226E029E2000112D1 /* SwipeCardStack */,
+				6EEB5A4926E029E2000112D1 /* SwipeDirection.swift */,
+				6EEB5A4A26E029E2000112D1 /* Internal */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6EEB5A3C26E029E1000112D1 /* SwipeCard */ = {
+			isa = PBXGroup;
+			children = (
+				6EEB5A3D26E029E2000112D1 /* CardAnimationOptions.swift */,
+				6EEB5A3E26E029E2000112D1 /* SwipeView.swift */,
+				6EEB5A3F26E029E2000112D1 /* CardAnimator.swift */,
+				6EEB5A4026E029E2000112D1 /* SwipeCardDelegate.swift */,
+				6EEB5A4126E029E2000112D1 /* SwipeCard.swift */,
+			);
+			path = SwipeCard;
+			sourceTree = "<group>";
+		};
+		6EEB5A4226E029E2000112D1 /* SwipeCardStack */ = {
+			isa = PBXGroup;
+			children = (
+				6EEB5A4326E029E2000112D1 /* SwipeCardStackDataSource.swift */,
+				6EEB5A4426E029E2000112D1 /* CardStackAnimationOptions.swift */,
+				6EEB5A4526E029E2000112D1 /* CardStackAnimator.swift */,
+				6EEB5A4626E029E2000112D1 /* SwipeCardStack.swift */,
+				6EEB5A4726E029E2000112D1 /* SwipeCardStackDelegate.swift */,
+				6EEB5A4826E029E2000112D1 /* CardStackStateManager.swift */,
+			);
+			path = SwipeCardStack;
+			sourceTree = "<group>";
+		};
+		6EEB5A4A26E029E2000112D1 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				6EEB5A4B26E029E2000112D1 /* Array+Extensions.swift */,
+				6EEB5A4C26E029E2000112D1 /* CGVector+Extensions.swift */,
+				6EEB5A4D26E029E2000112D1 /* Extensions.swift */,
+				6EEB5A4E26E029E2000112D1 /* StringUtils.swift */,
+				6EEB5A4F26E029E2000112D1 /* PanGestureRecognizer.swift */,
+				6EEB5A5026E029E2000112D1 /* Animator.swift */,
+				6EEB5A5126E029E2000112D1 /* CGPoint+Extensions.swift */,
+				6EEB5A5226E029E2000112D1 /* TapGestureRecognizer.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		6EEB5A6726E029EE000112D1 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				6EEB5A6926E029F9000112D1 /* KeyboardAvoiding.swift */,
+				6EEB5A6826E029F9000112D1 /* KeyboardDismissingView.swift */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		D3B188F0C7E290FB6112681F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A45E1B80574B8076AD30D389 /* Pods-PlanB.debug.xcconfig */,
+				3274B44EBA6AC6EE65EF13E8 /* Pods-PlanB.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +328,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E7FA1D226DD550500FC9046 /* Build configuration list for PBXNativeTarget "PlanB" */;
 			buildPhases = (
+				5DD73495A66EA8739134F675 /* [CP] Check Pods Manifest.lock */,
 				6E7FA1BA26DD550300FC9046 /* Sources */,
 				6E7FA1BB26DD550300FC9046 /* Frameworks */,
 				6E7FA1BC26DD550300FC9046 /* Resources */,
+				6C102FEB4B5A365187D03344 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +388,90 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5DD73495A66EA8739134F675 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlanB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C102FEB4B5A365187D03344 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlanB/Pods-PlanB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlanB/Pods-PlanB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlanB/Pods-PlanB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6E7FA1BA26DD550300FC9046 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E7FA1C626DD550300FC9046 /* ViewController.swift in Sources */,
+				6EEB5A6D26E0CCA8000112D1 /* TextfieldPadding.swift in Sources */,
+				6EEB5A5326E029E2000112D1 /* CardAnimationOptions.swift in Sources */,
+				6ECF29C526E12D41005C79EC /* textAnimation.swift in Sources */,
+				6EEB5A5D26E029E2000112D1 /* CardStackStateManager.swift in Sources */,
+				6EEB5A5526E029E2000112D1 /* CardAnimator.swift in Sources */,
+				6EEB5A5726E029E2000112D1 /* SwipeCard.swift in Sources */,
+				6EEB5A6626E029E2000112D1 /* TapGestureRecognizer.swift in Sources */,
+				6EEB5A5B26E029E2000112D1 /* SwipeCardStack.swift in Sources */,
+				6EEB5A3426E00A30000112D1 /* CloseButton.swift in Sources */,
+				6EEB5A2626E00263000112D1 /* Gradient.swift in Sources */,
+				6EEB5A1526DF6271000112D1 /* UIView+Extensions.swift in Sources */,
+				6EEB5A1626DF6271000112D1 /* CardContentView.swift in Sources */,
+				6EEB5A2926E00317000112D1 /* ModeViewController.swift in Sources */,
+				6EEB5A5626E029E2000112D1 /* SwipeCardDelegate.swift in Sources */,
+				6EEB5A6326E029E2000112D1 /* PanGestureRecognizer.swift in Sources */,
+				6EEB5A6026E029E2000112D1 /* CGVector+Extensions.swift in Sources */,
+				6EEB5A5A26E029E2000112D1 /* CardStackAnimator.swift in Sources */,
+				6E7FA1C626DD550300FC9046 /* MainViewController.swift in Sources */,
+				6EEB5A5926E029E2000112D1 /* CardStackAnimationOptions.swift in Sources */,
+				6EEB5A5C26E029E2000112D1 /* SwipeCardStackDelegate.swift in Sources */,
+				6EEB5A1A26DF6271000112D1 /* GameViewController.swift in Sources */,
 				6E7FA1C226DD550300FC9046 /* AppDelegate.swift in Sources */,
-				6E7FA1C426DD550300FC9046 /* SceneDelegate.swift in Sources */,
+				6EEB5A3326E00A30000112D1 /* TagView.swift in Sources */,
+				6EEB5A1726DF6271000112D1 /* CardModel.swift in Sources */,
+				6EEB5A6526E029E2000112D1 /* CGPoint+Extensions.swift in Sources */,
+				6EEB5A5F26E029E2000112D1 /* Array+Extensions.swift in Sources */,
+				6EEB5A6B26E029F9000112D1 /* KeyboardAvoiding.swift in Sources */,
+				6EEB5A5E26E029E2000112D1 /* SwipeDirection.swift in Sources */,
+				6EEB5A6126E029E2000112D1 /* Extensions.swift in Sources */,
+				6EEB5A6226E029E2000112D1 /* StringUtils.swift in Sources */,
+				6EEB5A6A26E029F9000112D1 /* KeyboardDismissingView.swift in Sources */,
+				6EEB5A6426E029E2000112D1 /* Animator.swift in Sources */,
+				6EEB5A3526E00A30000112D1 /* TagListView.swift in Sources */,
+				6EEB5A5426E029E2000112D1 /* SwipeView.swift in Sources */,
+				6EEB5A1826DF6271000112D1 /* CardFooterView.swift in Sources */,
+				6EEB5A5826E029E2000112D1 /* SwipeCardStackDataSource.swift in Sources */,
+				6EEB5A2C26E004E3000112D1 /* CornerRadius.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +548,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +603,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,12 +615,13 @@
 		};
 		6E7FA1D326DD550500FC9046 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A45E1B80574B8076AD30D389 /* Pods-PlanB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DUHPBR64U;
-				INFOPLIST_FILE = PlanB/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PlanB/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +635,13 @@
 		};
 		6E7FA1D426DD550500FC9046 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3274B44EBA6AC6EE65EF13E8 /* Pods-PlanB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DUHPBR64U;
-				INFOPLIST_FILE = PlanB/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PlanB/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
